@@ -7,8 +7,9 @@ body,
 .information,
 .images-with-captions, 
 .quote,
+.quote-with-author,
 .sign-up, 
-.sign-up-box,
+.blue-box,
 .footer {
     display: flex;
 }
@@ -22,33 +23,124 @@ body {
     flex: 1;
 }
 
-.header {
-    justify-content: space-between;
+.header,
+.blue-box {
+    justify-content: space-around;
 }
 
 body,
 .body,
 .information-and-sign-up,
-.information {
+.information,
+.quote {
     flex-direction: column;
 }
 
 .description,
+.information,
 .quote,
 .sign-up,
 .footer {
     justify-content: center;
 }
 
+.description,
 .information,
+.quote,
+.sign-up,
+.blue-box,
 .footer {
     align-items: center;
 }
 
-.quote{
-    justify-content: space-around;
+.header,
+.description {
+    background-color: #404040;
 }
 
-.body {
-    justify-content: space-between;
+.description {
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/city-panorama.jpg');
+
+    /*
+    height: 400px;
+    width: auto;
+    gap: 32px;
+    */
+
+    height: 480px;
+    width: auto;
+    background-repeat: no-repeat;
+    background-size: 1920px 480px;
+    position: relative;
+}
+
+.header-logo, 
+.information-and-sign-up h2 {
+    font-family: "Roboto";
+    font-size: 24px;
+    color: #F9FAF8;
+    font-weight: bold;
+}
+
+.header > ul {
+    list-style: none;
+    gap: 12px;
+}
+
+a,
+.information-and-sign-up p {
+    text-decoration: none;
+    font-family: "Roboto";
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.information-and-sign-up p{
+    max-width: 300px;
+}
+
+.sign-up-button0, 
+.sign-up-button1 {
+    border: 2px solid #E5E7EB;
+    width: 100px;
+    height: 25px;
+}
+
+.information {
+    height: 400px;
+}
+
+.images-with-captions {
+    margin: 12px;
+    gap: 12px;
+}
+
+.quote {
+    height: 300px;
+    justify-content: center;
+    background-color: #E5E7EB;
+}
+.actual-quote {
+    font-size: 24px;
+}
+
+.quotee {
+    align-self: flex-end;
+}
+
+.blue-box {
+    background-color: #3882F6 ;
+    width: 80%;
+
+}
+
+.sign-up {
+    height: 250px;
+}
+
+.footer{
+    height: 72px;
+    background: #eee;
+    background-color: #404040;
 }
