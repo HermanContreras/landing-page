@@ -1,0 +1,54 @@
+body,
+.body,
+.header,
+.header ul,
+.description,
+.information-and-sign-up,
+.information,
+.images-with-captions, 
+.quote,
+.sign-up, 
+.sign-up-box,
+.footer {
+    display: flex;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+}
+
+.body {
+    flex: 1;
+}
+
+.header {
+    justify-content: space-between;
+}
+
+body,
+.body,
+.information-and-sign-up,
+.information {
+    flex-direction: column;
+}
+
+.description,
+.quote,
+.sign-up,
+.footer {
+    justify-content: center;
+}
+
+.information,
+.footer {
+    align-items: center;
+}
+
+.quote{
+    justify-content: space-around;
+}
+
+.body {
+    justify-content: space-between;
+}
